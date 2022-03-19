@@ -1,5 +1,5 @@
 package main
-// Los slice son cambiables, mientras que los arrays no lo son.
+// Los slice son Alterables, mientrastanto, los arrays no lo son.
 
 import "fmt"
 
@@ -15,12 +15,12 @@ func main() {
 	// cap nos permitira saber cuanta capacidad tenemos en un array
 
 	//Slice
-	//Nos permite no decirle la cantidad de valores que tendra.
+	//No se le debe indicar la cantidad de elementos que pueda tener.
 	slice := []int{1,2,3,4,5,6} 
 	fmt.Println(slice, len(slice), cap(slice))
 
 	// Metodos en el Slice
-	// Los slices nos permitiran interactuar entre Slice, Array y Listas.
+	// Estos metodos nos permitiran interactuar dentro  Slice, Array y Listas.
 	
 	fmt.Println(slice[0])
 	fmt.Println(slice[:3])
