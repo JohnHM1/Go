@@ -2,7 +2,6 @@ package main
 
 import (
 	"fmt"
-	"strings"
 )
 
 func main() {
@@ -20,8 +19,9 @@ func main() {
 
 	}
 	//Ejecutando la Funcion.
-	isPalindromoUpperLower("Amor")
+	isPalindromo("ama")
 }
+
 //
 // Actividad ; Detectar si la palabra es palindroma o no.
 func isPalindromo(text string) {
@@ -40,27 +40,6 @@ func isPalindromo(text string) {
 		fmt.Println(true)
 
 	} else {
-
-		fmt.Println(false)
-
-	}
-
-}
-
-func isPalindromoUpperLower(text string) {
-	//Con la funcion strings.To(Lower,Upper) se modifica el codigo ascii. (Mayus/Minus).
-	text = strings.ToLower(text)
-	var  textoReversa string
-	for i := len(text)-1 ; i >= 0 ; i--{
-
-		textoReversa += string(text[i])
-
-	}
-	if text == textoReversa {
-
-		fmt.Println(true)
-
-	}else{
 
 		fmt.Println(false)
 
