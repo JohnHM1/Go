@@ -23,4 +23,10 @@ func main() {
 
 	}
 
+	//Encontrar un valor 
+// Agregando una variable en la busqueda de la llavame en el map nospermitira saber si esa llave existe o no
+// imprimiendo un True si existe o un false en su defecto.
+	value, oki := m["Jose"]
+	fmt.Println(value,oki)
+
 }
