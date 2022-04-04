@@ -34,4 +34,6 @@ func main() {
 	carro.Brand = "Audi"
 	carro.Year = 2022
 	fmt.Println(carro)
+
+	MyPackage.PrintMessage("Hola pedazo de Puta")
 }
