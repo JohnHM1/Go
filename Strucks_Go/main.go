@@ -1,6 +1,7 @@
 package main
 
 import (
+	//Las letras a la derecha del directorio es un alias, con el cual se puede hacer llamado de esta Struck
 	MyPackage "curso_golang_go/Strucks_Go/ModificacionDeStrucks"
 	"fmt"
 )
@@ -21,14 +22,14 @@ func main() {
 	}
 	fmt.Println(mycar)
 
-	// La otra forma de hacer un struck
+	// La otra forma de hacer uso de un struck
 
 	var otherCar car
 	otherCar.brand = "Ferrari"
 	otherCar.year = 2019
 
 	fmt.Println(otherCar)
-
+// Este es el llamado de Package de Un strucks Publico con la linea 5 de codigo.
 	var carro MyPackage.CarDos
 	carro.Brand = "Audi"
 	carro.Year = 2022
